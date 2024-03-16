@@ -44,7 +44,7 @@ frontend http
 frontend https
 	mode http
 	timeout client 10s
-	bind *:443 ssl crt  /etc/letsencrypt/live/www.annemarie535257.tech/fullchain.pem
+	bind *:443 ssl crt  /etc/letsencrypt/live/www.buwituze.tech/fullchain.pem
 	default_backend allServers
 
 
@@ -53,5 +53,5 @@ backend allServers
 	timeout server  10s
 	balance roundrobin
 	mode http
-	server 6047-web-01 100.26.54.116:80 check
-	server 6047-web-02 18.212.79.227:80 check
+	server 6053-web-01 54.235.6.72:80 check
+	server 6053-web-02 54.196.221.162:80 check
